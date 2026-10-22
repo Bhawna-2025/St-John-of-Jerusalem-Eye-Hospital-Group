@@ -1,69 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St John of Jerusalem Eye Hospital Group</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- for icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St John of Jerusalem Eye Hospital Group</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- swiper cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
 </head>
 
 <body class="font-['Montserrat',sans-serif]">
-    <!--  -->
-    <header class="w-full">
-        <!-- Top Announcement Bar -->
-        <div class="bg-black text-white text-xs font-semibold py-2.5 px-4 sm:px-8">
-            <div class="max-w-7xl mx-auto flex items-center justify-between">
-                <button class="p-1 text-gray-400 hover:text-white transition cursor-pointer" aria-label="Previous announcement">
-                    <i class="ri-arrow-left-line text-lg"></i>
-                </button>
+  <!--  -->
+  <header class="w-full">
+    <!-- Top Announcement Bar -->
+    <div class="bg-black text-white text-xs font-semibold py-2.5 px-4 sm:px-8">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <button class="p-1 text-gray-400 hover:text-white transition cursor-pointer" aria-label="Previous announcement">
+          <i class="ri-arrow-left-line text-lg"></i>
+        </button>
 
-                <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
-                    <p class="tracking-wide">Gaza is still in crisis - find out more about our appeal.</p>
-                    <button class="bg-[#d9222a] hover:bg-[#b51b22] text-white px-4 py-1.5 rounded-full font-bold uppercase tracking-wider text-[11px] transition duration-200 shadow-sm cursor-pointer whitespace-nowrap">
-                        DONATE TO THE APPEAL
-                    </button>
-                </div>
-
-                <button class="p-1 text-gray-400 hover:text-white transition cursor-pointer" aria-label="Next announcement">
-                    <i class="ri-arrow-right-line text-lg"></i>
-                </button>
-            </div>
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
+          <p class="tracking-wide">
+            Gaza is still in crisis - find out more about our appeal.
+          </p>
+          <button
+            class="bg-[#d9222a] hover:bg-[#b51b22] text-white px-4 py-1.5 rounded-full font-bold uppercase tracking-wider text-[11px] transition duration-200 shadow-sm cursor-pointer whitespace-nowrap">
+            DONATE TO THE APPEAL
+          </button>
         </div>
 
-        <!-- Main Navigation Bar -->
-        <div class=" border-b border-gray-200 py-3 px-4 sm:px-8 bg-[#FAB914]">
-            <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-                <!-- Logos -->
-                <a href="#" class="flex items-center gap-3 flex-shrink-0 hover:opacity-90 transition">
-                    <img src="assets/logo-icon.svg" alt="St John Eye Hospital Logo" class="h-10 w-auto">
-                    <img src="assets/logoName.svg" alt="St John of Jerusalem Eye Hospital Group" class="h-7 sm:h-8 w-auto">
-                </a>
+        <button class="p-1 text-gray-400 hover:text-white transition cursor-pointer" aria-label="Next announcement">
+          <i class="ri-arrow-right-line text-lg"></i>
+        </button>
+      </div>
+    </div>
 
-                <!-- Search Input -->
-                <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
-                    <input 
-                        type="text" 
-                        placeholder="Search for anything..." 
-                        class="w-full pl-4 pr-10 py-2 rounded bg-white border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition"
-                    >
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-[#E54113]  text-white px-2 py-1 pointer-events-none flex items-center">
-                        <i class="ri-search-line text-lg"></i>
-                    </div>
-                </div>
-            </div>
+    <!-- Main Navigation Bar -->
+    <div class="border-b border-gray-200 h-[74px]  bg-[#FAB914] flex items-center justify-between ">
+      <div class="w-full flex items-center justify-between pl-40">
+        <!-- Logos -->
+        <a href="#" class="flex items-center gap-3 flex-shrink-0 hover:opacity-90 transition">
+          <img src="assets/logo-icon.svg" alt="St John Eye Hospital Logo" class="h-10 w-auto" />
+          <img src="assets/logoName.svg" alt="St John of Jerusalem Eye Hospital Group" class="h-7 sm:h-8 w-auto" />
+        </a>
+
+        <!-- Search Input -->
+        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
+          <input type="text" placeholder="Search for anything..."
+            class=" w-full pl-4 pr-10 py-2 rounded bg-white border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition" />
+          <div
+            class="absolute right-0 top-1/2 -translate-y-1/2 bg-[#E54113] text-white px-2 py-[4.5px] pointer-events-none flex items-center">
+            <i class="ri-search-line text-lg"></i>
+          </div>
         </div>
-    </header>
 
-    <script src="script.js"></script>
+        <div class="flex items-center gap-4">
+          <div class="flex justify-center items-center gap-1">
+            <i class="ri-shopping-basket-2-line text-[22px]"></i>
+            <p class="font-bold text-[16px]">99</p>
+          </div>
+
+          <button
+            class="bg-[#E54113] hover:bg-[#fff] text-white hover:text-black font-bold uppercase tracking-wider text-[20px] transition duration-200 shadow-sm cursor-pointer h-[74px] px-14 duration-500">
+            DONATE
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#F9F9F9] flex justify-between items-center h-[37px] border-b border-gray-200 pl-40">
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">About us</a>
+        <i class="ri-arrow-drop-down-fill text-[18px]"></i>
+      </div>
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">What We Do</a>
+        <i class="ri-arrow-drop-down-fill text-[18px]"></i>
+      </div>
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">Get Involved</a>
+        <i class="ri-arrow-drop-down-fill text-[18px]"></i>
+      </div>
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">Events</a>
+        <!-- <i class="ri-arrow-drop-down-fill text-[18px]"></i> -->
+      </div>
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">News & publications</a>
+        <i class="ri-arrow-drop-down-fill text-[18px]"></i>
+      </div>
+
+      <div class="flex items-center cursor-pointer">
+        <a href="#" class="font-[400]">shop</a>
+        <i class="ri-arrow-drop-down-fill text-[18px]"></i>
+      </div>
+
+      <button class="bg-[#000000] hover:bg-white text-white hover:text-black h-full px-[65px] duration-500">
+        subscribe
+      </button>
+    </div>
+  </header>
+
+  <section id="hero" class="">
+    <!-- Slider main container -->
+    <div class="swiper h-[560px]">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <video src="assets/"></video>
+        </div>
+        <!-- slide2 -->
+        <div class="swiper-slide story-slide bg-[#FAB914] py-[80px] px-[108px] ">
+          <div class="h-[400px] w-400">
+            <img src="assets/slide2.jpg" alt="" class="h-full w-full object-cover">
+          </div>
+          <div class="flex flex-col gap-[32px] items-start ">
+            <h1 class="text-[48px] font-extrabold ">SAJA'S STORY</h1>
+            <p class="text-[18px] pr-20">Saja recently received treatment at our St John Eye Hospital in Jerusalem. Read more about her story,
+              told in her own mother's words.</p>
+            <button class="bg-[#000000] hover:bg-white text-white hover:text-black h-full px-[32px] py-[14px] font-bold rounded block duration-500">
+              Read More
+            </button>
+          </div>
+
+        </div>
+        <div class="relative swiper-slide bg-[url('assets/slide3.jpg')] bg-cover bg-center">
+          <div class="absolute top-0 left-0  h-full w-full bg-linear-to-r from-[#000000c2] to-white-500 z-0"></div>
+          <div class="absolute top-30 left-30 max-w-4xl flex flex-col gap-[32px] items-start text-white z-1">
+            <h1 class="text-[48px] font-extrabold pr-50">SAVING SIGHT IN GAZA APPEAL</h1>
+            <p class="text-[18px] pr-50">As a charity that's worked in the region for over 100 years, we have one aim: Saving sight, changing lives. The people affected are among the most disadvantaged in the world and this war will create an unprecedented humanitarian crisis.</p>
+            <button class="bg-[#E54113] hover:bg-white text-white hover:text-black h-full px-[32px] py-[14px] font-bold rounded block duration-500">
+              Donate NOW
+            </button>
+          </div>
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
